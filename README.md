@@ -4,15 +4,25 @@ Este proyecto realiza un análisis exploratorio de datos (EDA) sobre la evoluci�
 # Estructura del Proyecto
 La organización de carpetas sigue un estándar profesional para proyectos de ciencia de datos:
 NBA Analysis/
+
 ├── data/
+
 │ ├── raw/ # Datos originales (CSVs descargados)
+
 │ └── processed/ # Datos limpios listos para análisis
+
 ├── src/
+
 │ └── func/
+
 │ ├── down.py # Script para descargar datos de Kaggle
+
 │ └── clean.py # Script de procesamiento y limpieza (ETL)
+
 ├── tests.ipynb # Notebook con visualizaciones y hallazgos
+
 ├── requirements.txt # Librerías necesarias para ejecutar el proyecto
+
 └── .gitignore # Archivos excluidos (datos pesados y credenciales)
 
 # Configuración e Instalación
