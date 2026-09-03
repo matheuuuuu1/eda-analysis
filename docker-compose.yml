@@ -1,0 +1,14 @@
+# NBA Analysis - Jupyter EDA
+services:
+  jupyter:
+    build: .
+    container_name: nba-analysis
+    restart: unless-stopped
+    ports:
+      - "${JUPYTER_PORT:-8888}:8888"
+    volumes:
+      - nba_data:/work/data
+      - nba_out:/work/outputs
+volumes:
+  nba_data:
+  nba_out:
